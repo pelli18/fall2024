@@ -11,3 +11,9 @@ The correct answer is not as important for these activities as it is to do them 
 
 
 [^cmplt]: you will get full credit as long as all of the things are *done in good faith* even if not correct. However if it looks like you tried to outsource (eg to LLM) or plagiarize a solution, you will not earn credit for that. 
+
+## 2024-09-10
+
+
+```{include} ../_review_/2024-09-10.md
+```

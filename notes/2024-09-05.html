@@ -460,8 +460,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-docs-are-really-helpful-and-have-screenshots">1.8. GitHub Docs are really helpful and have screenshots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github-terminology">1.9. Git and GitHub terminology</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">1.9.1. GitHub Actions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-your-repo">1.9.2. Fix your repo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-credit-for-class">1.9.3. Get Credit for class</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-for-next-class">1.10. Prepare for next class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#badges">1.11. Badges</a></li>
 </ul>
             </nav>
         </div>
@@ -615,7 +619,7 @@ I needed to know what each one did to skip the right ones.</p>
 <h2><span class="section-number">1.7. </span>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
 <p>Your KWL chart is where you will start by tracking what you know now/before we start and what you want to learn about each topic.  Then you will update it throughout the semester. You will also add material to the repository to produce evidence of your learning.</p>
 <p>see the link on prismia if you missed class</p>
-<p>Glossary!!</p>
+<p>There is a Glossary!!</p>
 <p><a class="reference external" href="https://compsys-progtools.github.io/spring2024/resources/glossary.html#term-repository">repository</a></p>
 <p><strong>pro tip: links are often hints or more information</strong></p>
 </section>
@@ -643,7 +647,71 @@ I needed to know what each one did to skip the right ones.</p>
 <p>We also discussed some of the terminology for git. We will also come back to these ideas in greater detail later.</p>
 <section id="github-actions">
 <h3><span class="section-number">1.9.1. </span>GitHub Actions<a class="headerlink" href="#github-actions" title="Link to this heading">#</a></h3>
+<p>GitHub allows us to run scripts within our repos, the feature is called GitHub Actions and the individual items are called workflows.</p>
+<p>Action files are stored in the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> folder in yaml files (key value pairs that hold settings and script steps).</p>
+<p>Some run automatically, like on any PR or when a commit is to main.  The ones in your KWL repo are <a class="reference external" href="https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow">“manual”</a> so we run them from the Actions tab.</p>
 </section>
+<section id="fix-your-repo">
+<h3><span class="section-number">1.9.2. </span>Fix your repo<a class="headerlink" href="#fix-your-repo" title="Link to this heading">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>So, it is apparently a weird bug in GitHub, that the actions were not working,
+but it is easy (though a little annoying) to fix.</p>
+<p>You can do this before or in Lab on Monday.</p>
+</div>
+<p>On each file in the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> folder that ends in <code class="docutils literal notranslate"><span class="pre">.yml</span></code> edit in some small way (eg add an additional blank line in a place where there is a blank line already) and commit directly to main.</p>
+</section>
+<section id="get-credit-for-class">
+<h3><span class="section-number">1.9.3. </span>Get Credit for class<a class="headerlink" href="#get-credit-for-class" title="Link to this heading">#</a></h3>
+<p>You can use the same content you sent on prismia at the end of class, but for the script to count it at the end of the semester, it has to be in your repo.</p>
+<ol class="arabic simple">
+<li><p>Go to the actions tab of your repo</p></li>
+<li><p>Select the action that has the name <code class="docutils literal notranslate"><span class="pre">Forgotten</span> <span class="pre">Badge</span> <span class="pre">(Late,</span> <span class="pre">but</span> <span class="pre">was</span> <span class="pre">in</span> <span class="pre">class)</span></code></p></li>
+<li><p>In the blue banner that appears click <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Workflow</span></code></p></li>
+<li><p>leave the branch set to main</p></li>
+<li><p>Enter the date <code class="docutils literal notranslate"><span class="pre">2024-09-05</span></code></p></li>
+<li><p>Wait a minute or so for it to run, when it has a green checkmark, go to your PR tab</p></li>
+<li><p>select the PR with the title Experience Report 2024-09-05</p></li>
+<li><p>Go to the files tab of that PR and edit it (use the 3 dots menu in the top right of the file box)</p></li>
+<li><p>fill in the information and commit to the same branch (do not open an additional PR)</p></li>
+<li><p>assign &#64;instructors to review your PR.</p></li>
+</ol>
+<p>For screenshots, see the <a class="reference external" href="https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow">Manually running a workflow, on GitHub</a></p>
+</section>
+</section>
+<section id="prepare-for-next-class">
+<h2><span class="section-number">1.10. </span>Prepare for next class<a class="headerlink" href="#prepare-for-next-class" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>(for lab Monday) Read the syllabus section of the course website carefully and explore the whole course <a class="reference external" href="https://introcompsys.github.io/fall2024/">website</a></p></li>
+<li><p>(for lab Monday) Bring questions about the course</p></li>
+<li><p>(for class Tuesday) Think about one thing you’ve learned really well (computing or not). Be prepared to discuss the following: How do you know that you know it? What was it llike to first learn it?  (nothing written to submit, but you can use the issue to take notes if you would like)</p></li>
+</ol>
+</section>
+<section id="badges">
+<h2><span class="section-number">1.11. </span>Badges<a class="headerlink" href="#badges" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Review</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://classroom.github.com/a/OwypOh3M">accept this assignment</a> and join the existing team to get access to more features in our course organization.</p></li>
+<li><p>Post an introduction to your classmates <a class="reference external" href="https://github.com/introcompsys/fa23community/discussions/1">on our discussion forum</a>  (include link to your comment in PR comment, must accept above to see)</p></li>
+<li><p>Read the notes from today’s class carefully</p></li>
+<li><p>Fill in the first two columns of your KWL chart (content of the PR; named to match the badge name)</p></li>
+</ol>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Practice</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://classroom.github.com/a/OwypOh3M">accept this assignment</a> and join the existing team to get access to more features in our course organization.</p></li>
+<li><p>Post an introduction to your classmates <a class="reference external" href="https://github.com/introcompsys/fa23community/discussions/1">on our discussion forum</a> (include link  to your comment in PR comment, must accept above to see)</p></li>
+<li><p>Read the notes from today’s class carefully</p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme">Create a profile readme</a> and include a screenshot of your profile</p></li>
+<li><p>Fill in the first two columns of your KWL chart (content of the PR; named to match the badge name)</p></li>
+</ol>
+</div>
+</div>
 </section>
 </section>
 
@@ -729,8 +797,12 @@ I needed to know what each one did to skip the right ones.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-docs-are-really-helpful-and-have-screenshots">1.8. GitHub Docs are really helpful and have screenshots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github-terminology">1.9. Git and GitHub terminology</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">1.9.1. GitHub Actions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-your-repo">1.9.2. Fix your repo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-credit-for-class">1.9.3. Get Credit for class</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-for-next-class">1.10. Prepare for next class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#badges">1.11. Badges</a></li>
 </ul>
   </nav></div>
 

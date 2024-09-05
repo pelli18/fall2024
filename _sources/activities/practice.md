@@ -9,6 +9,11 @@ After each class, you will need to review the day's material. This includes revi
 the day's material in a similar, but distinct way. They represent the minimum bar for B-level understanding.  
 
 
-```{important}
-These will start showing up after the first notes are posted
+
+## 2024-09-05
+
+[related notes](../notes/2024-9-05)
+
+Activities:
+```{include} ../_practice/2024-09-05.md
 ```
