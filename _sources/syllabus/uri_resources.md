@@ -1,8 +1,13 @@
-# Support
+# Support Systems
 
 ```{warning}
 these links  may be outdated, will update soon
 ```
+
+
+## Mental Health and Wellness: 
+
+We understand that college comes with challenges and stress associated with your courses, job/family responsibilities and personal life. URI offers students a range of services to support your [mental health and wellbeing](https://web.uri.edu/healthservices/mental-health-and-wellness/), including the [URI Counseling Center](https://web.uri.edu/counseling/), [MySSP](https://web.uri.edu/counseling/myssp/) (Student Support Program) App, the [Wellness Resource Center](https://web.uri.edu/campusrec/fitness-and-wellness/wellness-programs/), and [Well-being Coaching](https://web.uri.edu/campusrec/well-being-coaching/). 
 
 ## Academic Enhancement Center
 
