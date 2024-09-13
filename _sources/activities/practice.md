@@ -17,3 +17,17 @@ the day's material in a similar, but distinct way. They represent the minimum ba
 Activities:
 ```{include} ../_practice/2024-09-05.md
 ```
+## 2024-09-12
+
+[related notes](../notes/2024-09-12)
+
+Activities:
+```{include} ../_practice/2024-09-12.md
+```
+## 2024-09-12
+
+[related notes](../notes/2024-09-12)
+
+Activities:
+```{include} ../_practice/2024-09-12.md
+```
