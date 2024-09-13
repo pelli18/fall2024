@@ -17,8 +17,9 @@ parts:
     numbered: True
     chapters:
         # - glob: notes/2023-*.md
-    - file: notes/2024-09-05.md
-    - file: notes/2024-09-10.md
+    - file: notes/2024-09-05
+    - file: notes/2024-09-10
+    - file: notes/2024-09-12
   - caption: Activities
     chapters:
     - file: activities/kwl
