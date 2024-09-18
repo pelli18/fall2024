@@ -199,6 +199,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../notes/2024-09-05.html">1. Welcome, Introduction, and Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notes/2024-09-10.html">2. More orientation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notes/2024-09-12.html">3. Working Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/2024-09-17.html">4. How do git branches work?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Activities</span></p>
 <ul class="current nav bd-sidenav">
@@ -449,6 +450,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2024-09-17</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2024-09-19</a></li>
 </ul>
             </nav>
         </div>
@@ -470,7 +472,7 @@ document.write(`
 </section>
 <section id="id3">
 <h2>2024-09-17<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="#../notes/2024-09-17"><span class="xref myst">related notes</span></a></p>
+<p><a class="reference internal" href="../notes/2024-09-17.html"><span class="doc std std-doc">related notes</span></a></p>
 <p>Activities:</p>
 <ol class="arabic simple">
 <li><p>Find the glossary page for the course website, link it below. Review the terms for the next class: shell, terminal, bash, git, zsh, powershell, GitHub. Make a diagram using <a class="reference external" href="https://mermaid.js.org/syntax/flowchart.html">mermaid</a> to highlight how these terms relate to one another. Put this in a file called <code class="docutils literal notranslate"><span class="pre">terminal-vocab.md</span></code> on a branch linked to this issue.</p></li>
@@ -493,7 +495,7 @@ document.write(`
         </div></section>
 <section id="id4">
 <h2>2024-09-17<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="#../notes/2024-09-17"><span class="xref myst">related notes</span></a></p>
+<p><a class="reference internal" href="../notes/2024-09-17.html"><span class="doc std std-doc">related notes</span></a></p>
 <p>Activities:</p>
 <ol class="arabic simple">
 <li><p>Find the glossary page for the course website, link it below. Review the terms for the next class: shell, terminal, bash, git, zsh, powershell, GitHub. Make a diagram using <a class="reference external" href="https://mermaid.js.org/syntax/flowchart.html">mermaid</a> to highlight how these terms relate to one another. Put this in a file called <code class="docutils literal notranslate"><span class="pre">terminal-vocab.md</span></code> on a branch linked to this issue.</p></li>
@@ -513,7 +515,50 @@ document.write(`
     me[Microsoft Edge]
     end
     end
-        </div><hr class="footnotes docutils" />
+        </div></section>
+<section id="id6">
+<h2>2024-09-19<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#../notes/2024-09-19"><span class="xref myst">related notes</span></a></p>
+<p>Activities:</p>
+<p>Examine an open source software project and fill in the template below in a file called <span class="target" id="index-0"></span>software.md in your kwl repo on a branch that is linked to this issue. You do not need to try to understand how the <em>code</em> works for this exercise, but instead focus on how the repo is set up, what additional information is in there beyond the code.  You may pick any mature open source project, meaning a project with recent commits, active PRs and issues, multiple contributors. In class we will have a discussion and you will compare what you found with people who examined a different project.  Coordinate with peers (eg using the class discussion or in lab time) to look at different projects in order to discuss together in class.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Software Reflection</span>
+
+Project : &lt;markdown link to repo&gt;
+
+<span class="gu">## README</span>
+
+&lt;!-- what is in the readme? how well does it help you  --&gt;
+
+<span class="gu">## Contents </span>
+
+&lt;!-- denote here types of files (code, what languages, what other files) --&gt;
+
+
+<span class="gu">## Automation</span>
+
+&lt;!-- comment on what types of stuff is in the .github directory --&gt;
+
+<span class="gu">## Documentation</span>
+
+&lt;!-- what support for users? what for developers? code of conduct? citation? --&gt;
+
+<span class="gu">## Hidden files and support</span>
+ &lt;!-- What type of things are in the hidden files? who would need to see those files vs not? --&gt;
+</pre></div>
+</div>
+<p>Some open source projects if you do not have one in mind:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pandas-dev/pandas">pandas</a></p></li>
+<li><p><a class="reference external" href="https://github.com/numpy/numpy">numpy</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cli/cli">GitHub CLI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rust-lang/rust">Rust language</a></p></li>
+<li><p><a class="reference external" href="https://github.com/microsoft/vscode">vs code</a></p></li>
+<li><p><a class="reference external" href="https://github.com/microsoft/TypeScript">Typescript</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apple/swift">Swift</a></p></li>
+<li><p><a class="reference external" href="https://github.com/executablebooks/jupyter-book">Jupyter book</a></p></li>
+<li><p><a class="reference external" href="https://github.com/swcarpentry/git-novice">git-novice lesson</a></p></li>
+</ul>
+<hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="cmplt" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
@@ -592,6 +637,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2024-09-17</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2024-09-19</a></li>
 </ul>
   </nav></div>
 
