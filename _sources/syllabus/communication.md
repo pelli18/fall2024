@@ -57,10 +57,10 @@ put this on a {term}`branch` called `watch_community_badge` and title your PR "C
 help_df.style.hide(axis="index")
 ``` 
 
-Online office hours locations are linked on the [GitHub Organization Page](https://github.com/compsys-progtools)
+Online office hours locations and appointment links for alternative times are linked on the [GitHub Organization Page](https://github.com/compsys-progtools)
 
 ```{important}
-You can only see them if you are a "member" to join, make sure that you have completed Lab 0. 
+You can only see them if you are a "member". To join, make sure that you have completed Lab 0. 
 ```
 
 <!-- 
@@ -110,25 +110,22 @@ Contribute a TLDR set of tabs or mermaid visual to this section for a community 
 
 ### For assignment help
 
-- **send in advance, leave time for a response** I check e-mail/github a small number of times per day, during work hours, almost exclusively. You might see me post to this site, post to BrightSpace, or comment on your assignments outside of my normal working hours, but I will not reliably see emails that arrive during those hours. This means that it is important to start assignments early.
-
-### Using isses
-
-
-- **always** use issues in your repo for content directly related to assignments.  If you {term}`push` your work to the {term}`repository` and then open an {term}`issue`, we can see your work and your question at the same time and download it to run it if we need to debug something
+- use the badge issue for comments and @ mention instructors 
+- **send in advance, leave time for a response** 
+- **always** use issues in your repo for content directly related to assignments.  If you {term}`push` your partial work to the {term}`repository` and then open an {term}`issue`, we can see your work and your question at the same time and download it to run it if we need to debug something
 - use issues or discussions for questions about this syllabus or class notes. At the top right there's a {term}`GitHub` logo {fa}`github` that allows you to open a {term}`issue` (for a question) or suggest an edit (eg if you think there's a tpo or you find an additional helpful resource related to something)
 
 
-```{admonition} ... 
-:class: anchor,dropdown
-
-You can submit a {term}`pull request` for the typo above, but be sure to check the {term}`pull request` tab of the repo before submitting to see if it has already been submitted.
+```{note}
+I check e-mail/github a small number of times per day, during work hours, almost exclusively. You might see me post to this site, post to BrightSpace, or comment on your assignments outside of my normal working hours, but I will not reliably see emails that arrive during those hours. This means that it is important to start assignments early.
 ```
+
 
 ### For E-mail
 
-- use e-mail only for things that **need to be private to Dr. Brown and not seen by TAs**
-- Include `[CSC392]`  in the subject line of your email along with the topic of your message. This is important, because your messages are important, but I also get a lot of e-mail. Consider these a cheat code to my inbox: I have setup a filter that will flag your e-mail if you include that in subject to ensure that I see it.
+- use e-mail only for things that **need to be private to Dr. Brown and not seen by TAs** 
+- other messages may be addressed on your repo or the course website, without a response via email
+- Include `[CSC311]`  in the subject line of your email along with the topic of your message. This is important, because your messages are important, but I also get a lot of e-mail. Consider these a cheat code to my inbox: I have setup a filter that will flag your e-mail if you include that in subject to ensure that I see it.
 
 ```{admonition} Should you e-mail your work? 
 :class: anchor,dropdown
