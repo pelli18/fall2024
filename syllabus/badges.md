@@ -168,6 +168,17 @@ ax.set_title('Badge Status as of '+ today_string);
 
 **November 5 above will actually be on November 6** 
 
+## Getting Feedback 
+
+Who should you request/assign?
+
+```{list-table}
+* - course item type
+  - issue asignee
+  - PR reviewer
+```
+
+
 ## Deadlines 
 
 <!-- Deadlines are flexible in this course so that you can balance your workload across other courses, and instead the **feedback** schedule is fixed.  Weekly feedback hours will be announced and posted. 
@@ -192,8 +203,7 @@ If you miss multiple classes, create a catch-up plan to get back on track by con
 ### Review and Practice Badges 
 
 These badges have 5 stages: 
-- posted: tasks are on the course website
-- planned: an {term}`issue` is created
+- posted: tasks are on the course website and an {term}`issue` is created
 - started: one task is attempted and a draft PR is open 
 - completed: all tasks are attempted PR is ready for review, and a review is requested
 - earned: PR is approved (by instructor or a TA) and work is merged
@@ -243,10 +253,10 @@ this includes minor corrections relative to the readme in the template provided
 ``` 
 -->
 
-
+## Procedures
 
 (prepare-experience-process)=
-## Prepare work and Experience Badges Process
+### Prepare work and Experience Badges Process
 
 
 This is for a single example with specific dates, but it is similar for all future dates
@@ -295,10 +305,12 @@ gitGraph
 
 Where the "approved" tag represents and approving reivew on the PR. 
 
+You can, once you know how, do this offline and do the merge with in the CLI instead of with a PR. 
+
 +++
 
 (review-practice-process)=
-## Review and Practice Badge 
+### Review and Practice Badge 
 
 
 Legend:
@@ -329,7 +341,7 @@ flowchart TD
       direction TB
       write[/Dr Brown finalizes tasks after class/]
       post[/Dr. Brown pushes to github/]
-      link[/notes are posted  with badge steps/]
+      link[/notes are posted  with badge steps /]
       posted[[Posted: on badge date]]
       write -->post
       post -->link
@@ -341,11 +353,9 @@ flowchart TD
       decide{Do you need this badge?}
       close[close the issue]
       branch[create branch]
-      planned[[Planned: on badge date]]
       create -->decide
       decide -->|no| close
       decide -->|yes| branch
-    create --o planned
     end
     subgraph work[Work on the badge]
       direction TB
@@ -395,7 +405,7 @@ style planned fill:#2cf
 ```
 
 (explore-process)=
-## Explore Badges
+### Explore Badges
 
 
 ```{mermaid}
@@ -460,7 +470,7 @@ style earned fill:#2cf
 
 
 (build-process)=
-## Build Badges 
+### Build Badges 
 
 
 ```{mermaid}
@@ -529,7 +539,7 @@ style earned fill:#2cf
 ```
 
 (community-process)=
-## Community Badges
+### Community Badges
 
 You can log them either manualy via files or with help of an action that a past student contributed! 
 ````{margin}
@@ -538,11 +548,11 @@ You, too could contribute code that helps automate things in class or organize t
 ```
 ````
 
-### Logger Action
+#### Logger Action
 
 Your KWL repo has an action called "Community & Explore Badge Logger" that will help you
 
-### Manual logging
+#### Manual logging
 These are the instructions from your `community_contributions.md` file in your KWL repo: 
 For each one: 
 - In the `community_contributions.md`` file on your kwl repo, add an item in a bulleted list (start the line with - )
