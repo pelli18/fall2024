@@ -13,7 +13,7 @@ kernelspec:
 
 # Badge Deadlines and Procedures
 
-This page includes more visual versions of the information on the badge page.  You should read both, but this one is often more helpful, because some of the processes take a lot of words to explain and make more sense with a diagram for a lot of people. 
+This page includes more visual versions of the information on the [grading](grading.md) page.  You should read both, but this one is often more helpful, because some of the processes take a lot of words to explain and make more sense with a diagram for a lot of people. 
 
 ```{code-cell} ipython3
 :tags: [hide-input]
@@ -36,13 +36,13 @@ last_day = date(2024,4,29)
 # no_class_ranges = [(date(2023,11,23),date(2023,11,26)),
 #                     (date(2023,11,13)),
 #                   (date(2023,10,10))]
-no_class_ranges = [(date(2024,3,10),date(2024,3,16)),
-                    (date(2024,2,19))]
+no_class_ranges = [(date(2024,11,27),date(2024,12,1)),
+                    (date(2024,10,15))]
 
 
 meeting_days =[1,3] # datetime has 0=Monday
 
-penalty_free_end = date(2024, 2, 9)
+penalty_free_end = date(2024, 9, 26)
 
 
 def day_off(cur_date,skip_range_list=no_class_ranges):
@@ -166,6 +166,7 @@ glue('today_notdisplayed',"not today",display=False)
 ax.set_title('Badge Status as of '+ today_string); 
 ```
 
+**November 5 above will actually be on November 6** 
 
 ## Deadlines 
 
@@ -530,6 +531,18 @@ style earned fill:#2cf
 (community-process)=
 ## Community Badges
 
+You can log them either manualy via files or with help of an action that a past student contributed! 
+````{margin}
+````{note}
+You, too could contribute code that helps automate things in class or organize things
+```
+````
+
+### Logger Action
+
+Your KWL repo has an action called "Community & Explore Badge Logger" that will help you
+
+### Manual logging
 These are the instructions from your `community_contributions.md` file in your KWL repo: 
 For each one: 
 - In the `community_contributions.md`` file on your kwl repo, add an item in a bulleted list (start the line with - )

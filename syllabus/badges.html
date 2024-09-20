@@ -456,7 +456,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-practice-badge">Review and Practice Badge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-process">Explore Badges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-process">Build Badges</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-badges">Community Badges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-badges">Community Badges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logger-action">Logger Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-logging">Manual logging</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -470,7 +474,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="badge-deadlines-and-procedures">
 <h1>Badge Deadlines and Procedures<a class="headerlink" href="#badge-deadlines-and-procedures" title="Link to this heading">#</a></h1>
-<p>This page includes more visual versions of the information on the badge page.  You should read both, but this one is often more helpful, because some of the processes take a lot of words to explain and make more sense with a diagram for a lot of people.</p>
+<p>This page includes more visual versions of the information on the <a class="reference internal" href="grading.html"><span class="std std-doc">grading</span></a> page.  You should read both, but this one is often more helpful, because some of the processes take a lot of words to explain and make more sense with a diagram for a lot of people.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -497,13 +501,13 @@ document.write(`
 <span class="c1"># no_class_ranges = [(date(2023,11,23),date(2023,11,26)),</span>
 <span class="c1">#                     (date(2023,11,13)),</span>
 <span class="c1">#                   (date(2023,10,10))]</span>
-<span class="n">no_class_ranges</span> <span class="o">=</span> <span class="p">[(</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">16</span><span class="p">)),</span>
-                    <span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">19</span><span class="p">))]</span>
+<span class="n">no_class_ranges</span> <span class="o">=</span> <span class="p">[(</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">27</span><span class="p">),</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
+                    <span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">))]</span>
 
 
 <span class="n">meeting_days</span> <span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># datetime has 0=Monday</span>
 
-<span class="n">penalty_free_end</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="n">penalty_free_end</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">26</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">day_off</span><span class="p">(</span><span class="n">cur_date</span><span class="p">,</span><span class="n">skip_range_list</span><span class="o">=</span><span class="n">no_class_ranges</span><span class="p">):</span>
@@ -630,7 +634,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1981/4025995832.py:90: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2003/3787553076.py:90: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -641,7 +645,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;experience&#39;][badge_target_df[&#39;date&#39;] &lt;= today] = &#39;eligible&#39;
-/tmp/ipykernel_1981/4025995832.py:92: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:92: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -652,7 +656,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review_target&#39;][badge_target_df[&#39;date&#39;] &lt;= today] = &#39;active&#39;
-/tmp/ipykernel_1981/4025995832.py:93: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:93: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -663,7 +667,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice_target&#39;][badge_target_df[&#39;date&#39;] &lt;= today] = &#39;active&#39;
-/tmp/ipykernel_1981/4025995832.py:94: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:94: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -674,7 +678,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review_target&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:96: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:96: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -685,7 +689,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice_target&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:98: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:98: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -696,7 +700,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review_target&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:100: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:100: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -707,7 +711,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice_target&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:103: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:103: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -718,7 +722,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review&#39;][badge_target_df[&#39;date&#39;] &lt;= today] = &#39;active&#39;
-/tmp/ipykernel_1981/4025995832.py:104: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:104: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -729,7 +733,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice&#39;][badge_target_df[&#39;date&#39;] &lt;= today] = &#39;active&#39;
-/tmp/ipykernel_1981/4025995832.py:105: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:105: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -740,7 +744,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:107: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:107: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -751,7 +755,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:109: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:109: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -762,7 +766,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:111: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:111: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -773,7 +777,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:113: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:113: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -784,7 +788,7 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;review&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:115: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+/tmp/ipykernel_2003/3787553076.py:115: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
 You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
 A typical example is when you are setting values in a column of a DataFrame, like:
 
@@ -795,16 +799,17 @@ Use `df.loc[row_indexer, &quot;col&quot;] = values` instead, to perform the assi
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
   badge_target_df[&#39;practice&#39;][badge_target_df[&#39;date&#39;]
-/tmp/ipykernel_1981/4025995832.py:120: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+/tmp/ipykernel_2003/3787553076.py:120: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   badge_target_df_hm = badge_target_df.replace(status_numbers_hm).set_index(&#39;date&#39;)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Badge Status as of 2024-09-19&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Badge Status as of 2024-09-20&#39;)
 </pre></div>
 </div>
-<img alt="../_images/412289b8a6f17ad440d54e7522ed2f4526bd91316451c0811aec075db4dfc4f8.png" src="../_images/412289b8a6f17ad440d54e7522ed2f4526bd91316451c0811aec075db4dfc4f8.png" />
+<img alt="../_images/0de3d399439c3eeb33b2b1bc889f4a9e9291c4b6b2699cb4b98aac94883fbde3.png" src="../_images/0de3d399439c3eeb33b2b1bc889f4a9e9291c4b6b2699cb4b98aac94883fbde3.png" />
 </div>
 </div>
+<p><strong>November 5 above will actually be on November 6</strong></p>
 <section id="deadlines">
 <h2>Deadlines<a class="headerlink" href="#deadlines" title="Link to this heading">#</a></h2>
 <!-- Deadlines are flexible in this course so that you can balance your workload across other courses, and instead the **feedback** schedule is fixed.  Weekly feedback hours will be announced and posted. 
@@ -1129,6 +1134,23 @@ style earned fill:#2cf
         </div></section>
 <section id="community-badges">
 <span id="community-process"></span><h2>Community Badges<a class="headerlink" href="#community-badges" title="Link to this heading">#</a></h2>
+<p>You can log them either manualy via files or with help of an action that a past student contributed!</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You, too could contribute code that helps automate things in class or organize things</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</aside>
+<section id="logger-action">
+<h3>Logger Action<a class="headerlink" href="#logger-action" title="Link to this heading">#</a></h3>
+<p>Your KWL repo has an action called “Community &amp; Explore Badge Logger” that will help you</p>
+</section>
+<section id="manual-logging">
+<h3>Manual logging<a class="headerlink" href="#manual-logging" title="Link to this heading">#</a></h3>
 <p>These are the instructions from your <code class="docutils literal notranslate"><span class="pre">community_contributions.md</span></code> file in your KWL repo:
 For each one:</p>
 <ul class="simple">
@@ -1153,6 +1175,7 @@ For each one:</p>
     merge --o earned
 
         </div></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1230,7 +1253,11 @@ For each one:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-practice-badge">Review and Practice Badge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-process">Explore Badges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-process">Build Badges</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-badges">Community Badges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-badges">Community Badges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logger-action">Logger Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-logging">Manual logging</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
