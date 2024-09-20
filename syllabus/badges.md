@@ -176,6 +176,27 @@ Who should you request/assign?
 * - course item type
   - issue asignee
   - PR reviewer
+* - prepare work
+  - not required; can be student
+  - none requierd; merge to experience branch
+* - experience badge
+  - N/A
+  - @VioletVex (will be automatic)
+* - practice badge
+  - not required; can be student
+  - @instuctors (will then convert to 1/3 people)
+* - review badge
+  - not required; can be student
+  - @instuctors (will then convert to 1/3 people)
+* - explore badge
+  - proposal, assigned to @brownsarahm (also student optionally)
+  - @brownsarahm
+* - build badge
+  - proposal, assigned to @brownsarahm (also student optionally)
+  - @brownsarahm
+* - anything merged pre-emptively in penalty free
+  -  @brownsarahm 
+  - clear others
 ```
 
 
