@@ -31,10 +31,18 @@ Activities:
 Activities:
 ```{include} ../_prepare/2024-09-17.md
 ```
+(prepare2024-09-19)=
 ## 2024-09-19
 
 [related notes](../notes/2024-09-19)
 
 Activities:
 ```{include} ../_prepare/2024-09-19.md
+```
+## 2024-09-24
+
+[related notes](../notes/2024-09-24)
+
+Activities:
+```{include} ../_prepare/2024-09-24.md
 ```
