@@ -27,71 +27,12 @@ import seaborn as sns
 from myst_nb import glue
 # style note: when I wrote this code, it was not all one cell. I merged the cells
 # for display on the course website, since Python is not the main outcome of this course
+# import constants from cspt
+from cspt import CourseDates
 
-# semester settings
-first_day = date(2024,1,23)
-last_day = date(2024,4,29)
+course_dates = CourseDates()
 
-
-# no_class_ranges = [(date(2023,11,23),date(2023,11,26)),
-#                     (date(2023,11,13)),
-#                   (date(2023,10,10))]
-no_class_ranges = [(date(2024,11,27),date(2024,12,1)),
-                    (date(2024,10,15))]
-
-
-meeting_days =[1,3] # datetime has 0=Monday
-
-penalty_free_end = date(2024, 9, 26)
-
-
-def day_off(cur_date,skip_range_list=no_class_ranges):
-    '''
-    is the current date a day off? 
-
-    Parameters
-    ----------
-    cur_date : datetime.date
-        date to check
-    skip_range_list : list of datetime.date objects or 2-tuples of datetime.date
-        dates where there is no class, either single dates or ranges specified by a tuple
-
-    Returns
-    -------
-    day_is_off : bool
-        True if the day is off, False if the day has class
-    '''
-    # default to not a day off
-    day_is_off=False
-    # 
-    for skip_range in skip_range_list:
-        if type(skip_range) == tuple:
-            # if any of the conditions are true that increments and it will never go down, flase=0, true=1
-            day_is_off +=  skip_range[0]<=cur_date<=skip_range[1]
-        else:
-            day_is_off += skip_range == cur_date
-    # 
-    return day_is_off
-
-
-# enumerate weeks
-
-mtg_delta = timedelta(meeting_days[1]-meeting_days[0])
-week_delta = timedelta(7)
-weeks = 14
-
-
-possible = [(first_day+week_delta*w, first_day+mtg_delta+week_delta*w) for w in range(weeks)]
-weekly_meetings = [[c1,c2] for c1,c2 in possible if not(day_off(c1,no_class_ranges))]
-meetings = [m for w in weekly_meetings for m in w]
-meetings_string = [m.isoformat() for m in meetings]
-weekly_meetings
-
-
-# possible = [(first_day+week_delta*w, first_day+mtg_delta+week_delta*w) for w in range(weeks)]
-# weekly_meetings = [[c1,c2] for c1,c2 in possible if not(during_sb(c1))]
-meetings = [m for w in weekly_meetings for m in w if not(day_off(m))]
-
+meetings = course_dates.class_meeting_strings
 
 # build a table for the dates
 badge_types = ['experience', 'review', 'practice']
