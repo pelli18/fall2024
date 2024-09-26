@@ -105,9 +105,17 @@ the grade plans on the grading page and the thresholds above assume you earn the
     - 10 community badges
     - 18
     - auto
-*   - Hack the course
-    - an explore or build that contributes to the course infrastructure/website 
+*   - Hack the course - Contributor - Build
+    - 1 build that contributes to the course infrastructure/website +1 community or review
     - 18
+    - event
+*   - Hack the course - Contributor - Explore
+    - 1 explore  that contributes to the course infrastructure/website + 2 community, with at least 1 review
+    - 18
+    - event
+*   - Hack the course - Critic
+    - 5 total community badge, at least 2 reviews of other course contributions
+    - 9
     - event
 ```
 
