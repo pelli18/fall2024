@@ -27,71 +27,12 @@ import seaborn as sns
 from myst_nb import glue
 # style note: when I wrote this code, it was not all one cell. I merged the cells
 # for display on the course website, since Python is not the main outcome of this course
+# import constants from cspt
+from cspt import CourseDates
 
-# semester settings
-first_day = date(2024,1,23)
-last_day = date(2024,4,29)
+course_dates = CourseDates()
 
-
-# no_class_ranges = [(date(2023,11,23),date(2023,11,26)),
-#                     (date(2023,11,13)),
-#                   (date(2023,10,10))]
-no_class_ranges = [(date(2024,11,27),date(2024,12,1)),
-                    (date(2024,10,15))]
-
-
-meeting_days =[1,3] # datetime has 0=Monday
-
-penalty_free_end = date(2024, 9, 26)
-
-
-def day_off(cur_date,skip_range_list=no_class_ranges):
-    '''
-    is the current date a day off? 
-
-    Parameters
-    ----------
-    cur_date : datetime.date
-        date to check
-    skip_range_list : list of datetime.date objects or 2-tuples of datetime.date
-        dates where there is no class, either single dates or ranges specified by a tuple
-
-    Returns
-    -------
-    day_is_off : bool
-        True if the day is off, False if the day has class
-    '''
-    # default to not a day off
-    day_is_off=False
-    # 
-    for skip_range in skip_range_list:
-        if type(skip_range) == tuple:
-            # if any of the conditions are true that increments and it will never go down, flase=0, true=1
-            day_is_off +=  skip_range[0]<=cur_date<=skip_range[1]
-        else:
-            day_is_off += skip_range == cur_date
-    # 
-    return day_is_off
-
-
-# enumerate weeks
-
-mtg_delta = timedelta(meeting_days[1]-meeting_days[0])
-week_delta = timedelta(7)
-weeks = 14
-
-
-possible = [(first_day+week_delta*w, first_day+mtg_delta+week_delta*w) for w in range(weeks)]
-weekly_meetings = [[c1,c2] for c1,c2 in possible if not(day_off(c1,no_class_ranges))]
-meetings = [m for w in weekly_meetings for m in w]
-meetings_string = [m.isoformat() for m in meetings]
-weekly_meetings
-
-
-# possible = [(first_day+week_delta*w, first_day+mtg_delta+week_delta*w) for w in range(weeks)]
-# weekly_meetings = [[c1,c2] for c1,c2 in possible if not(during_sb(c1))]
-meetings = [m for w in weekly_meetings for m in w if not(day_off(m))]
-
+meetings = course_dates.class_meeting_strings
 
 # build a table for the dates
 badge_types = ['experience', 'review', 'practice']
@@ -168,6 +109,38 @@ ax.set_title('Badge Status as of '+ today_string);
 
 **November 5 above will actually be on November 6** 
 
+## Getting Feedback 
+
+Who should you request/assign?
+
+```{list-table}
+* - course item type
+  - issue asignee
+  - PR reviewer
+* - prepare work
+  - not required; can be student
+  - none requierd; merge to experience branch
+* - experience badge
+  - N/A
+  - @VioletVex (will be automatic)
+* - practice badge
+  - not required; can be student
+  - @instuctors (will then convert to 1/3 people)
+* - review badge
+  - not required; can be student
+  - @instuctors (will then convert to 1/3 people)
+* - explore badge
+  - proposal, assigned to @brownsarahm (also student optionally)
+  - @brownsarahm
+* - build badge
+  - proposal, assigned to @brownsarahm (also student optionally)
+  - @brownsarahm
+* - anything merged pre-emptively in penalty free
+  -  @brownsarahm 
+  - clear others
+```
+
+
 ## Deadlines 
 
 <!-- Deadlines are flexible in this course so that you can balance your workload across other courses, and instead the **feedback** schedule is fixed.  Weekly feedback hours will be announced and posted. 
@@ -192,8 +165,7 @@ If you miss multiple classes, create a catch-up plan to get back on track by con
 ### Review and Practice Badges 
 
 These badges have 5 stages: 
-- posted: tasks are on the course website
-- planned: an {term}`issue` is created
+- posted: tasks are on the course website and an {term}`issue` is created
 - started: one task is attempted and a draft PR is open 
 - completed: all tasks are attempted PR is ready for review, and a review is requested
 - earned: PR is approved (by instructor or a TA) and work is merged
@@ -243,10 +215,10 @@ this includes minor corrections relative to the readme in the template provided
 ``` 
 -->
 
-
+## Procedures
 
 (prepare-experience-process)=
-## Prepare work and Experience Badges Process
+### Prepare work and Experience Badges Process
 
 
 This is for a single example with specific dates, but it is similar for all future dates
@@ -299,11 +271,13 @@ You can merge the prepare into the experience with a PR or on the command line, 
 Where the "approved" tag represents and approving reivew on the PR. 
 
 
+You can, once you know how, do this offline and do the merge with in the CLI instead of with a PR. 
+
 
 +++
 
 (review-practice-process)=
-## Review and Practice Badge 
+### Review and Practice Badge 
 
 
 Legend:
@@ -334,7 +308,7 @@ flowchart TD
       direction TB
       write[/Dr Brown finalizes tasks after class/]
       post[/Dr. Brown pushes to github/]
-      link[/notes are posted  with badge steps/]
+      link[/notes are posted  with badge steps /]
       posted[[Posted: on badge date]]
       write -->post
       post -->link
@@ -346,11 +320,9 @@ flowchart TD
       decide{Do you need this badge?}
       close[close the issue]
       branch[create branch]
-      planned[[Planned: on badge date]]
       create -->decide
       decide -->|no| close
       decide -->|yes| branch
-    create --o planned
     end
     subgraph work[Work on the badge]
       direction TB
@@ -400,7 +372,7 @@ style planned fill:#2cf
 ```
 
 (explore-process)=
-## Explore Badges
+### Explore Badges
 
 
 ```{mermaid}
@@ -465,7 +437,7 @@ style earned fill:#2cf
 
 
 (build-process)=
-## Build Badges 
+### Build Badges 
 
 
 ```{mermaid}
@@ -534,7 +506,7 @@ style earned fill:#2cf
 ```
 
 (community-process)=
-## Community Badges
+### Community Badges
 
 You can log them either manualy via files or with help of an action that a past student contributed! 
 ````{margin}
@@ -543,11 +515,11 @@ You, too could contribute code that helps automate things in class or organize t
 ```
 ````
 
-### Logger Action
+#### Logger Action
 
 Your KWL repo has an action called "Community & Explore Badge Logger" that will help you
 
-### Manual logging
+#### Manual logging
 These are the instructions from your `community_contributions.md` file in your KWL repo: 
 For each one: 
 - In the `community_contributions.md`` file on your kwl repo, add an item in a bulleted list (start the line with - )
