@@ -43,3 +43,17 @@ Activities:
 Activities:
 ```{include} ../_review/2024-09-19.md
 ```
+## 2024-09-24
+
+[related notes](../notes/2024-09-24)
+
+Activities:
+```{include} ../_review/2024-09-24.md
+```
+## 2024-09-26
+
+[related notes](../notes/2024-09-26)
+
+Activities:
+```{include} ../_review/2024-09-26.md
+```

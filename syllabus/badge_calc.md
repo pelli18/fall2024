@@ -58,6 +58,7 @@ The total influence of each badge is as follows:
 grade_constants.influence_df
 ```
 
+(bonustable)=
 ## Bonuses
 
 In addition to the weights for each badge, there also bonuses that will automatically applied to your grade at the end of the semester.  These are for longer term patterns, not specific assignments.  You earn these while workng on other assignments, not separately. 
@@ -82,7 +83,7 @@ the grade plans on the grading page and the thresholds above assume you earn the
     - 18
     - auto
 *   - Breadth
-    - If review + practice badges >-18:
+    - If review + practice badges >=18:
     - 32
     - auto
 *   - Git-ing unstuck 
@@ -105,9 +106,17 @@ the grade plans on the grading page and the thresholds above assume you earn the
     - 10 community badges
     - 18
     - auto
-*   - Hack the course
-    - an explore or build that contributes to the course infrastructure/website 
+*   - Hack the course - Contributor - Build
+    - 1 build that contributes to the course infrastructure/website +1 community or review
     - 18
+    - event
+*   - Hack the course - Contributor - Explore
+    - 1 explore  that contributes to the course infrastructure/website + 2 community, with at least 1 review
+    - 18
+    - event
+*   - Hack the course - Critic
+    - 5 total community badge, at least 2 reviews of other course contributions
+    - 9
     - event
 ```
 
