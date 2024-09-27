@@ -283,6 +283,7 @@ gitGraph
    branch prepare-2023-09-12
    checkout prepare-2023-09-12
    commit id: "gitunderstanding.md"
+   checkout main
    branch experience-2023-09-12
    checkout experience-2023-09-12
    commit id: "initexp"
@@ -293,7 +294,11 @@ gitGraph
    merge experience-2023-09-12
 ```
 
+You can merge the prepare into the experience with a PR or on the command line, your choice. 
+
 Where the "approved" tag represents and approving reivew on the PR. 
+
+
 
 +++
 
