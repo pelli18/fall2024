@@ -60,3 +60,17 @@ Activities:
 Activities:
 ```{include} ../_prepare/2024-10-01.md
 ```
+## 2024-10-03
+
+[related notes](../notes/2024-10-03)
+
+Activities:
+```{include} ../_prepare/2024-10-03.md
+```
+## 2024-10-03
+
+[related notes](../notes/2024-10-03)
+
+Activities:
+```{include} ../_prepare/2024-10-03.md
+```
