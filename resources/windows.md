@@ -17,31 +17,67 @@ your work to the index (staging area). Then when you push, it's the compatible v
 [git documentation of the feature](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace) 
 
 
-## Jupyter Book - Command Not Found After Installation
+## Jupyter Book - Issues During or After Installation
 
 1. **Check Python Installation**:  
-   Run `python --version`. If it shows a version, continue. If not, install Python.
+   Run `python --version`. If it shows a version, continue. If not, install Python from https://www.python.org/downloads/
+   If you get a "Permission Denied" message, see the "Adding Permissions" section below
+   If you know python is installed, see the "Checking Paths" section below
 
-2. **Install Jupyter Book**:  
-   Ensure Jupyter Book is installed using `pip install -U jupyter-book`. If `jupyter-book --version` returns "command not found," proceed.
+3. **Install Jupyter Book**:  
+   Ensure Jupyter Book is installed using `pip install -U jupyter-book`.
+   If `jupyter-book --version` returns then "command not found," see "Checking Paths" below
+   If you get a "Permission Denied" message, see the "Adding Permissions" section below
 
-3. **Check Installation Errors**:  
+5. **Check Installation Errors**:  
    If there were no errors during installation, skip to Step 4.  
-   If there were errors with a path (e.g., missing "Scripts" folder), do the following:
-   - Press `Windows + R`, type `sysdm.cpl`, and press Enter.
-   - Go to the **Advanced** tab → **Environment Variables**.
-   - Add the path containing the "Scripts" folder to the `Path` variable. Save and exit.
-   - Reopen Git Bash and try `jupyter-book --version`. If it works, you're done!  
-   - If "Access denied" occurs, try `sudo jupyter-book --version`. Windows Defender may prompt you to unlock the file. After unlocking, try the command again.
+   If there were errors with a path (e.g., missing "Scripts" folder), see the "Checking Path" section.
 
-4. **Check Path**:  
-   Ensure the following path exists:
+6. **Check for Directory**:
+   Ensure the following directories exist:
+   (Can check through File Explorer or through terminal)
    ```
-   C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\Python312\Scripts
+   C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\Python[VERSION#]\
+   C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\Python[VERSION#]\Scripts\
    ```
-   If it does:
-   - Repeat the steps for adding this path to the `Path` variable in **Environment Variables**.
-   - Reopen Git Bash and check `jupyter-book --version` again.  
+   If it does, move on
+   If not, ensure that Python was installed correctly from the website download, NOT the Windows Store 
 
-5. **Final Troubleshooting**:  
+8. **Final Troubleshooting**:  
    If issues persist, contact your Professor or TA for help! :)
+
+### Checking Paths
+If you get a `Command Not Found` message when trying to run `python` or `pip`, most likely your environment variable paths missing.
+First ensure the following directories exist:
+(Can check through File Explorer or through terminal)
+```
+C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\Python[VERSION#]\
+C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\Python[VERSION#]\Scripts\
+```
+If they do, there are two methods to ensuring the path variables exist and adding them if not:
+
+**Method 1**
+1. Go to your taskbar Search
+2. Search for and open "Edit the system environment variables"
+3. Click "Environment Variables..." in the window that opened
+4. Click "Path" line then "Edit..."
+
+**Method 2**
+1. Press `Windows + R`, type `sysdm.cpl`, and press Enter.
+2. Go to the **Advanced** tab → **Environment Variables**.
+3. Add the path containing the "Scripts" folder to the `Path` variable. Save and exit.
+4. Reopen Git Bash and try `jupyter-book --version`. If it works, you're done!  
+   - If "Access denied" occurs, try `sudo jupyter-book --version`. Windows Defender may prompt you to unlock the file. After unlocking, try the command again.
+  
+### Adding Permissions
+If you get a `Permission Denied` message when trying to run commands, Windows Security is blocking it.
+- If you get a pop-up notification when trying to run a command, simply click "unblock" each time
+- If you don't get a pop-up notif, follow the steps below to add an exclusion for Python
+1. Go to your taskbar Search
+2. Search for and open "Windows Security"
+3. Go to the "Virus & threat protection" section on the left
+4. Under "Virus & threat protection settings" click "manage settings"
+5. Scroll down to the "Exclusions" section and click "Add or remove exclusions"
+6. Click "Add an exclusion", then "Folder"
+7. Find and select the folder Python installed in
+   - Should be `C:\Users\[YOUR USERNAME]\AppData\Roaming\Python\`
