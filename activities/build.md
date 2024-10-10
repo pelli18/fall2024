@@ -43,6 +43,15 @@ This summary report will be added to your kwl repo as a new file `build_report_t
 
 ## Build Ideas 
 
+### Your Profile (CV/Resume) Website
+
+Use a static site generator, like one of the below. 
+
+
+#### Astro
+- https://astro.build
+- https://docs.astro.build/en/getting-started/
+- [requires npm installation](https://github.com/withastro/astro)
 
 ### General ideas to write a proposal for 
 - make a [vs code extension](https://code.visualstudio.com/api/get-started/your-first-extension) for this class or another URI CS course
