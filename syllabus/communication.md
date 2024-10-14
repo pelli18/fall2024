@@ -63,6 +63,9 @@ Online office hours locations and appointment links for alternative times are li
 You can only see them if you are a "member". To join, make sure that you have completed Lab 0. 
 ```
 
+```{warning}
+Monday 10/14 5-7pm Help Hours will instead be on Tuesday 10/15 5-6pm because of the holiday schedule shift
+```
 <!-- 
 ## Getting Help 
 
