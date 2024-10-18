@@ -8,10 +8,12 @@ html:
   use_edit_page_button      : true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : true  # Whether to add an "open an issue" button left navbar.
-  extra_footer              : ""  # Will be displayed underneath the footer.
+  extra_footer              : "made with [jupyterbook](https://jupyterbook.org/en/stable/intro.html)"  # Will be displayed underneath the footer.
   home_page_in_navbar       : true
   use_multitoc_numbering: false
+  copyright: "2024"
   # extra_navbar              : Download complete <a href="">PDF</a> # Will be displayed underneath the
+
 
 
 repository:
@@ -51,17 +53,4 @@ parse:
     - replacements
     - smartquotes
     - substitution
-  myst_substitutions:
-    time: TTh 12:30-1:45
-    location: Ranger 203
-    bscalendar: |
-      put in an issue if you see this saying "bscalendar is used"
-    semester: Spring 2024
-    repo_name: spring2024
-    repo_commits: |
-      [commit history](https://github.com/compsys-progtools/spring2024/commits)
-    repo_issue: |
-      [issue](https://github.com/compsys-progtools/spring2024//issues)
-    bssite: |
-      put in an issue if you see this saying "bssite is used"
-    ghinstructors: instructors
+
