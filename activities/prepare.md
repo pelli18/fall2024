@@ -15,7 +15,7 @@ The correct answer is not as important for these activities as it is to do them 
 ## 2024-09-10
 
 
-```{include} ../_review_/2024-09-10.md
+```{include} ../_review/2024-09-10.md
 ```
 ## 2024-09-17
 

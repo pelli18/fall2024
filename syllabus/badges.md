@@ -47,7 +47,7 @@ start_deadline = date.today() - timedelta(7)
 complete_deadline = date.today() - timedelta(14)
 
 # mark eligible experience badges
-badge_target_df['experience'][badge_target_df['date'] <= today] = 'eligible'
+badge_target_df['experience'][date.fromisoformat(badge_target_df['date']) <= today] = 'eligible'
 # mark targets, cascading from most recent to oldest to not have to check < and >
 badge_target_df['review_target'][badge_target_df['date'] <= today] = 'active'
 badge_target_df['practice_target'][badge_target_df['date'] <= today] = 'active'

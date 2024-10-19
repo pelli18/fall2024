@@ -52,13 +52,9 @@ parse:
     - smartquotes
     - substitution
   myst_substitutions:
-    time: MW 4:30-5:45
-    location: Engineering Building Room 045
-    repo_name: FIXME
+    repo_name: https://github.com/introcompsys/fall2024
     repo_commits: |
-      [commit history](https://github.com/introcompsys/fall2022/commits)
+      [commit history](https://github.com/introcompsys/fall2024/commits)
     repo_issue: |
-      [issue](https://github.com/introcompsys/fall2022/issues)
-    bssite: |
-      [Brightspace site](https://brightspace.uri.edu/d2l/home/202430)
-    ghinstructors: fa22instructors
+      [issue](https://github.com/introcompsys/fall2024/issues)
+

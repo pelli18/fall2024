@@ -10,10 +10,10 @@ After each class, you will need to review the day's material. This includes revi
 
 ## 2024-09-05
 
-[related notes](../notes/2024-9-05)
+[related notes](../notes/2024-09-05)
 
 Activities:
-```{include} ../_review_/2024-09-05.md
+```{include} ../_review/2024-09-05.md
 ```
 ## 2024-09-12
 
