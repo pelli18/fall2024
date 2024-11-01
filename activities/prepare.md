@@ -19,14 +19,12 @@ The correct answer is not as important for these activities as it is to do them 
 ```
 ## 2024-09-17
 
-[related notes](../notes/2024-09-17)
 
 Activities:
 ```{include} ../_prepare/2024-09-17.md
 ```
 ## 2024-09-17
 
-[related notes](../notes/2024-09-17)
 
 Activities:
 ```{include} ../_prepare/2024-09-17.md
@@ -34,92 +32,85 @@ Activities:
 (prepare2024-09-19)=
 ## 2024-09-19
 
-[related notes](../notes/2024-09-19)
 
 Activities:
 ```{include} ../_prepare/2024-09-19.md
 ```
 ## 2024-09-24
 
-[related notes](../notes/2024-09-24)
 
 Activities:
 ```{include} ../_prepare/2024-09-24.md
 ```
 ## 2024-09-26
 
-[related notes](../notes/2024-09-26)
 
 Activities:
 ```{include} ../_prepare/2024-09-26.md
 ```
 ## 2024-10-01
 
-[related notes](../notes/2024-10-01)
 
 Activities:
 ```{include} ../_prepare/2024-10-01.md
 ```
 ## 2024-10-03
 
-[related notes](../notes/2024-10-03)
 
 Activities:
 ```{include} ../_prepare/2024-10-03.md
 ```
 ## 2024-10-03
 
-[related notes](../notes/2024-10-03)
 
 Activities:
 ```{include} ../_prepare/2024-10-03.md
 ```
 ## 2024-10-08
 
-[related notes](../notes/2024-10-08)
 
 Activities:
 ```{include} ../_prepare/2024-10-08.md
 ```
 ## 2024-10-10
 
-[related notes](../notes/2024-10-10)
 
 Activities:
 ```{include} ../_prepare/2024-10-10.md
 ```
 ## 2024-10-17
 
-[related notes](../notes/2024-10-17)
 
 Activities:
 ```{include} ../_prepare/2024-10-17.md
 ```
 ## 2024-10-22
 
-[related notes](../notes/2024-10-22)
 
 Activities:
 ```{include} ../_prepare/2024-10-22.md
 ```
 ## 2024-10-24
 
-[related notes](../notes/2024-10-24)
 
 Activities:
 ```{include} ../_prepare/2024-10-24.md
 ```
 ## 2024-10-29
 
-[related notes](../notes/2024-10-29)
-
 Activities:
 ```{include} ../_prepare/2024-10-29.md
 ```
 ## 2024-10-31
 
-[related notes](../notes/2024-10-31)
-
 Activities:
 ```{include} ../_prepare/2024-10-31.md
+```
+
+## 2024-11-06
+
+
+
+Activities:
+```{include} ../_prepare/2024-11-06.md
 ```
