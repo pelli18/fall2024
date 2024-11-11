@@ -114,3 +114,9 @@ Activities:
 Activities:
 ```{include} ../_prepare/2024-11-06.md
 ```
+
+## 2024-11-12
+
+Activities:
+```{include} ../_prepare/2024-11-012.md
+```

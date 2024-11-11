@@ -130,3 +130,22 @@ Activities:
 Activities:
 ```{include} ../_practice/2024-10-31.md
 ```
+
+
+## 2024-11-06
+
+[related notes](../notes/2024-11-06)
+
+Activities:
+```{include} ../_practice/2024-11-06.md
+```
+
+
+## 2024-11-07
+
+[related notes](../notes/2024-11-07)
+
+Activities:
+```{include} ../_practice/2024-11-07.md
+```
+
