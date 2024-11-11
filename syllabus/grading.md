@@ -203,7 +203,8 @@ Different badges are different levels of complexity and map into different grade
 
 To pass: 
 - 22 experience badges
-- 13 lab check outs
+- 12 lab checkouts
+<!-- - 13 lab checkouts -->
 
 Add 18 review for a C or 18 practice for a B. 
 
@@ -238,24 +239,24 @@ These are minimum counts, you can see more details on how the final grade is cal
 
 To earn a D, complete:
 - 22 experience badges
-- 13 lab check outs
+- 12 lab check outs
 
 To earn a C, complete:
 - 22 experience badges
-- 13 lab check outs
+- 12 lab check outs
 - 18 review badges
 
 
 To earn a B, complete:
 - 22 experience badges
-- 13 lab check outs
+- 12 lab check outs
 - one of the following: 
   - 18 practice badges
   - 12 review + 12 practice
 
 For an A you must complete:
 - 22 experience badges
-- 13 lab check outs
+- 12 lab check outs
 - one of the following: 
     - 18 practice badges + 6 explore badges
     - 18 review badges + 3 build badges
