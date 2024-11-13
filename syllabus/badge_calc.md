@@ -79,7 +79,7 @@ the grade plans on the grading page and the thresholds above assume you earn the
     - 18
     - auto
 *   - Lab
-    - 13 lab badges
+    - 12 lab checkouts
     - 18
     - auto
 *   - Breadth
