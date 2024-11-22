@@ -147,3 +147,18 @@ Activities:
 ```{include} ../_review/2024-11-07.md
 ```
 
+
+## 2024-11-19
+
+[related notes](../notes/2024-11-19)
+
+Activities:
+```{include} ../_review/2024-11-19.md
+```
+## 2024-11-21
+
+[related notes](../notes/2024-11-21)
+
+Activities:
+```{include} ../_review/2024-11-21.md
+```
